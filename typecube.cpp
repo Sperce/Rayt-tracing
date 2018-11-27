@@ -203,7 +203,7 @@ Vector3D Platform::poke(Vector3D footPos, Vector3D futur, bool* grounded)
 	}
 
 	//*****************************************************************************
-	/*
+
 	doublejumper::doublejumper(Vector3D centre, Vector3D dimensions)
 	{
 		setCentre(centre);
@@ -246,4 +246,3 @@ Vector3D Platform::poke(Vector3D footPos, Vector3D futur, bool* grounded)
 	{
 	}
 
-	*/
