@@ -1,0 +1,24 @@
+#N canvas 1031 324 711 365 10;
+#X obj 47 333 dac~;
+#X msg 63 47 play 0 7.75 1;
+#X msg 79 76 play 0 7.75 2;
+#X msg 133 153 play 2.122 2.5 1;
+#X msg 89 102 play 2.122 2.5 0.5;
+#X text 238 11 MONO SAMPLER;
+#X text 351 249 <- the sampler take the path to the file and its original
+sample rate (here 48kHz)., f 43;
+#X text 298 57 <- play a part of this sample : start point in seconds
+\, end point in seconds and playback speed (1 is normal speed), f
+43;
+#X obj 46 248 sampler1~ samples/foots-mono.wav 48000;
+#X msg 133 207 stop;
+#X msg 132 182 loop 2.122 2.5 1;
+#X text 311 172 <- Play (once) or Loop (infinite) and Stop;
+#X connect 1 0 8 0;
+#X connect 2 0 8 0;
+#X connect 3 0 8 0;
+#X connect 4 0 8 0;
+#X connect 8 0 0 0;
+#X connect 8 0 0 1;
+#X connect 9 0 8 0;
+#X connect 10 0 8 0;
