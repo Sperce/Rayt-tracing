@@ -1,4 +1,0 @@
-#N canvas 1028 229 614 406 10;
-#X obj 152 151 oscilloscope;
-#X obj 152 34 osc~ 440;
-#X connect 1 0 0 0;
